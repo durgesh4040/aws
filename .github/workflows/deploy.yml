@@ -21,10 +21,9 @@ jobs:
         script: |
           cd ~/app || git clone https://github.com/durgesh4040/aws.git ~/app
           cd ~/app
-          git pull origin main
+          git pull origin master
 
           # For Node.js
-          npm install
           pm2 restart app || pm2 start app.js --name app
 
           # For Spring Boot
