@@ -24,9 +24,6 @@ jobs:
           git pull origin master
 
           # For Node.js
-          pm2 restart app || pm2 start app.js --name app
+          pm2 restart app || pm2 start index.js --name app
 
-          # For Spring Boot
-          # ./mvnw clean package -DskipTests
-          # pkill -f 'java -jar' || true
-          # nohup java -jar target/*.jar > app.log 2>&1 &
+       
