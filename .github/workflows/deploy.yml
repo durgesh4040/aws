@@ -24,6 +24,6 @@ jobs:
           git pull origin master
 
           # For Node.js
-          pm2 restart app || pm2 start index.js --name app
+          pm2 restart app || pm2 start src/index.js --name app
 
        
